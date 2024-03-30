@@ -95,8 +95,8 @@
 		(uuid "84a798b2-39ff-4d88-87d3-c592321a4b23")
 	)
 	(pad "3" connect roundrect
-		(at 0 0)
-		(size 5 1.5)
+		(at -0.3 0)
+		(size 5.6 1.5)
 		(layers "F.Cu" "F.Mask")
 		(roundrect_rratio 0.25)
 		(thermal_bridge_angle 45)
