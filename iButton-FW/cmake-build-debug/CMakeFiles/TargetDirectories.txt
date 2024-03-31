@@ -1,3 +1,0 @@
-C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug/CMakeFiles/STM32_USB_Test.elf.dir
-C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug/CMakeFiles/rebuild_cache.dir

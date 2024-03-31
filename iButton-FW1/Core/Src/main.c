@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usbd_hid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -82,7 +82,10 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  uint8_t buttonReport[5] = {0};
+  uint8_t lastButtonReport = 0;
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+  HAL_Delay(500);
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -96,6 +99,30 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    if (HAL_GPIO_ReadPin(Btn1_GPIO_Port, Btn1_Pin) == GPIO_PIN_RESET) {
+      buttonReport[0] |= 1<<5;
+    } else {
+      buttonReport[0] &= ~(1<<5);
+    }
+
+    if (HAL_GPIO_ReadPin(Btn2_GPIO_Port, Btn2_Pin) == GPIO_PIN_RESET) {
+      buttonReport[0] |= 1<<6;
+    } else {
+      buttonReport[0] &= ~(1<<6);
+    }
+
+    if (HAL_GPIO_ReadPin(Btn3_GPIO_Port, Btn3_Pin) == GPIO_PIN_RESET) {
+      buttonReport[0] |= 1<<7;
+    } else {
+      buttonReport[0] &= ~(1<<7);
+    }
+
+    if (buttonReport[0] != lastButtonReport) {
+      lastButtonReport = buttonReport[0];
+      USBD_HID_SendReport(&hUsbDeviceFS, buttonReport, 5);
+    }
+
+    HAL_Delay(50);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
