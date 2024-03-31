@@ -5,21 +5,21 @@
 	(uuid "7a42b07e-2549-4158-87dc-a392c9d51332")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x04_Socket"
+		(symbol "Connector:Conn_01x05_Socket"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Socket"
+			(property "Value" "Conn_01x05_Socket"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -45,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
+			(property "Description" "Generic connector, single row, 01x05, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -80,7 +80,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_Socket_1_1"
+			(symbol "Conn_01x05_Socket_1_1"
 				(arc
 					(start 0 -4.572)
 					(mid -0.5058 -5.08)
@@ -153,6 +153,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.27 5.08) (xy -0.508 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(arc
 					(start 0 0.508)
 					(mid -0.5058 0)
@@ -177,8 +189,20 @@
 						(type none)
 					)
 				)
+				(arc
+					(start 0 5.588)
+					(mid -0.5058 5.08)
+					(end 0 4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -196,7 +220,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -214,7 +238,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -232,7 +256,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -242,6 +266,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -622,6 +664,193 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_Push_SPDT"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_Push_SPDT"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Momentary Switch, single pole double throw"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_SPDT_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.016) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_SPDT_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.2032) (xy 2.3368 1.9812)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -887,6 +1116,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 66.04) (xy 148.59 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f64327d-bcb3-40f6-8232-c4e7fa14990a")
+	)
+	(wire
+		(pts
 			(xy 111.76 49.53) (xy 111.76 52.07)
 		)
 		(stroke
@@ -894,16 +1133,6 @@
 			(type default)
 		)
 		(uuid "465eb462-77ac-454a-9b5a-79238b189837")
-	)
-	(wire
-		(pts
-			(xy 143.51 53.34) (xy 148.59 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46632e65-47bf-4b19-a3a7-1eeae892ef42")
 	)
 	(wire
 		(pts
@@ -917,13 +1146,23 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 53.34) (xy 128.27 59.69)
+			(xy 139.7 55.88) (xy 142.24 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f6db3b4-e01d-4486-bc02-0c039b42235d")
+		(uuid "4f9c33a7-b562-4384-a4ec-3e201f596239")
+	)
+	(wire
+		(pts
+			(xy 105.41 72.39) (xy 111.76 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55a20806-ea25-4b75-b3c6-51c34d37b80b")
 	)
 	(wire
 		(pts
@@ -937,6 +1176,26 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 55.88) (xy 142.24 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7815784a-c1fd-4980-ae52-b8dadba1e232")
+	)
+	(wire
+		(pts
+			(xy 143.51 76.2) (xy 148.59 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ccae5aa-017d-4d9e-b6e2-9ee830fbdfc2")
+	)
+	(wire
+		(pts
 			(xy 88.9 57.15) (xy 95.25 57.15)
 		)
 		(stroke
@@ -944,6 +1203,16 @@
 			(type default)
 		)
 		(uuid "804674b3-6c6f-4389-940c-e25e13c214b5")
+	)
+	(wire
+		(pts
+			(xy 143.51 73.66) (xy 148.59 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "822d23c1-eb1b-4108-bde4-a6f5e37caf91")
 	)
 	(wire
 		(pts
@@ -977,13 +1246,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 58.42) (xy 148.59 58.42)
+			(xy 143.51 71.12) (xy 148.59 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98e36157-dcc3-4b07-b503-b032aa5ed70d")
+		(uuid "8ec0f745-8b56-40c7-b2b8-a817da8948bf")
 	)
 	(wire
 		(pts
@@ -1017,16 +1286,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 55.88) (xy 148.59 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf8dd6d9-3df3-4b12-86fe-fa694b3bff9f")
-	)
-	(wire
-		(pts
 			(xy 91.44 64.77) (xy 91.44 62.23)
 		)
 		(stroke
@@ -1057,13 +1316,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 60.96) (xy 148.59 60.96)
+			(xy 138.43 68.58) (xy 148.59 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f76147a0-7f1d-4682-953a-5e95a33c80f8")
+		(uuid "f5773db8-453e-4b34-8b34-315e687e4760")
 	)
 	(hierarchical_label "Boot"
 		(shape bidirectional)
@@ -1079,6 +1338,30 @@
 	)
 	(hierarchical_label "SWDIO"
 		(shape bidirectional)
+		(at 143.51 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "437e6db3-56b4-440a-b29e-6604ff68bcdb")
+	)
+	(hierarchical_label "PWR"
+		(shape bidirectional)
+		(at 91.44 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "492394cb-c7d5-42a5-8b40-74d10982a009")
+	)
+	(hierarchical_label "SWDIO"
+		(shape bidirectional)
 		(at 114.3 59.69 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1088,6 +1371,18 @@
 			(justify left)
 		)
 		(uuid "6e87d644-3b98-4ec8-98e5-80e93b4d0dbc")
+	)
+	(hierarchical_label "PWR"
+		(shape bidirectional)
+		(at 139.7 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7445c559-5cd2-4eed-976e-e9884cbc93da")
 	)
 	(hierarchical_label "SWCLK"
 		(shape bidirectional)
@@ -1115,7 +1410,7 @@
 	)
 	(hierarchical_label "SWCLK"
 		(shape bidirectional)
-		(at 143.51 60.96 180)
+		(at 143.51 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1123,7 +1418,7 @@
 			)
 			(justify right)
 		)
-		(uuid "a79e733a-2f4f-41d3-baa3-1f9ae338f48f")
+		(uuid "af19af4e-0b6d-4bee-9e0e-f0cc26675523")
 	)
 	(hierarchical_label "Boot"
 		(shape bidirectional)
@@ -1137,6 +1432,18 @@
 		)
 		(uuid "afa57113-b718-497b-a8a6-09c75692a5c4")
 	)
+	(hierarchical_label "PWR"
+		(shape bidirectional)
+		(at 105.41 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b2b93daf-5233-485e-abda-dddabfef5ec2")
+	)
 	(hierarchical_label "SWDIO"
 		(shape bidirectional)
 		(at 88.9 54.61 180)
@@ -1149,42 +1456,240 @@
 		)
 		(uuid "ccee4ceb-119b-402a-9929-fc10d11efa93")
 	)
-	(hierarchical_label "SWDIO"
+	(hierarchical_label "PWR"
 		(shape bidirectional)
-		(at 143.51 58.42 180)
+		(at 111.76 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "e30293a1-f913-4ce6-9d27-e25129eb0d3f")
+		(uuid "d82b020c-5dec-4b33-87da-9a92815cb4cb")
 	)
 	(hierarchical_label "Boot"
 		(shape bidirectional)
-		(at 128.27 59.69 270)
+		(at 111.76 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "fde3a63d-7e6f-460b-8eb7-96e1b486320b")
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 153.67 58.42 0)
-		(mirror x)
+		(lib_id "power:+3.3V")
+		(at 139.7 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "417b87c7-56d1-4804-87fb-e47c7017d4ad")
-		(property "Reference" "J2"
-			(at 154.3812 58.3622 0)
+		(fields_autoplaced yes)
+		(uuid "0424469d-ac26-4e30-a958-78ca8caf2b0e")
+		(property "Reference" "#PWR01"
+			(at 139.7 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 139.7 37.7769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 139.7 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de2ba2d8-1448-4cc1-b40a-03752eb33576")
+		)
+		(instances
+			(project "STLink-Edge"
+				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 138.43 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b6cfda2-8297-4e10-b2eb-a7b93ef24c2c")
+		(property "Reference" "#PWR08"
+			(at 138.43 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 138.43 64.4469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 138.43 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "849effd7-028d-43c6-9d0c-b5f96339cbe0")
+		)
+		(instances
+			(project "STLink-Edge"
+				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 143.51 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "577af33a-7a2e-4851-abda-f0b2306babd3")
+		(property "Reference" "#PWR010"
+			(at 143.51 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 143.51 61.9069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "455c263d-4ed5-4391-a4eb-33efcb6e65a8")
+		)
+		(instances
+			(project "STLink-Edge"
+				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x05_Socket")
+		(at 153.67 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "587daae1-0dc8-4585-9278-dea3f5877fa1")
+		(property "Reference" "J3"
+			(at 154.3812 69.9078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1192,8 +1697,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_STLink"
-			(at 154.3812 55.9379 0)
+		(property "Value" "Conn_STLink2"
+			(at 154.3812 72.3321 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1201,8 +1706,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 153.67 58.42 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 153.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1211,7 +1716,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 58.42 0)
+			(at 153.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1219,8 +1724,87 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 153.67 58.42 0)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 153.67 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "22fe3fae-d4f7-4844-b27b-95756cc9207d")
+		)
+		(pin "3"
+			(uuid "e6a80741-4c7c-49d5-be38-a5c03eea097b")
+		)
+		(pin "5"
+			(uuid "f6491037-698b-4510-a217-52f04bbd7b9b")
+		)
+		(pin "1"
+			(uuid "db057a81-0e98-41de-9992-d9f8cf7126d3")
+		)
+		(pin "2"
+			(uuid "12b3c12a-eab2-47e0-8af9-f46cc2a06cd7")
+		)
+		(instances
+			(project "STLink-Edge"
+				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push_SPDT")
+		(at 142.24 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7da68d24-4341-4f1b-8dbd-115c057f3729")
+		(property "Reference" "SW1"
+			(at 146.685 45.7778 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push_SPDT"
+			(at 146.685 48.2021 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 142.24 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Momentary Switch, single pole double throw"
+			(at 142.24 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1229,21 +1813,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "1a9fc403-7822-402a-8a80-20f5b17a3ef6")
+			(uuid "49ceae27-500f-42dc-b0d3-dd6be37f1d3d")
+		)
+		(pin "1"
+			(uuid "ba30c52b-e5ab-4db1-9aa0-052c4cc93ed4")
 		)
 		(pin "2"
-			(uuid "73d96ab6-b35d-4031-af42-9421dcdda9ca")
-		)
-		(pin "4"
-			(uuid "6238e3be-6a90-4ffb-912c-01743e607f25")
-		)
-		(pin "1"
-			(uuid "488195ee-194f-4699-b2be-68bcdbf6083c")
+			(uuid "5bc93c91-e806-4064-99ea-497c47f7047d")
 		)
 		(instances
 			(project "STLink-Edge"
 				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
-					(reference "J2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -1251,73 +1832,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 111.76 64.77 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57dd7bb1-dbe8-4956-9723-2384747e5884")
-		(property "Reference" "#PWR03"
-			(at 111.76 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 111.76 68.9031 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 111.76 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8844c4e7-a603-43a4-bab9-5510d251d8bc")
-		)
-		(instances
-			(project "STLink-Edge"
-				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 143.51 53.34 0)
+		(at 144.78 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1326,7 +1841,7 @@
 		(fields_autoplaced yes)
 		(uuid "8572bcba-5a31-4318-93b5-7266aba9f6cc")
 		(property "Reference" "#PWR06"
-			(at 143.51 57.15 0)
+			(at 144.78 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,7 +1850,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 143.51 49.2069 0)
+			(at 144.78 37.7769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1343,7 +1858,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 53.34 0)
+			(at 144.78 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1352,7 +1867,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 53.34 0)
+			(at 144.78 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1361,7 +1876,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 143.51 53.34 0)
+			(at 144.78 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1540,83 +2055,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 91.44 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8eaf1bc-f911-420b-a213-f79ef4727437")
-		(property "Reference" "#PWR01"
-			(at 91.44 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 91.44 45.3969 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 91.44 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ab0c723-1b3c-40e3-8865-851774a1672a")
-		)
-		(instances
-			(project "STLink-Edge"
-				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
-		(at 143.51 55.88 270)
+		(at 143.51 71.12 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dd161e19-5ef9-4ec7-9575-136491d157b2")
-		(property "Reference" "#PWR07"
-			(at 137.16 55.88 0)
+		(uuid "ebccad92-878f-4e84-bc76-67edc43c68e4")
+		(property "Reference" "#PWR09"
+			(at 137.16 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1625,7 +2074,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.3351 55.88 90)
+			(at 140.3351 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1634,7 +2083,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 55.88 0)
+			(at 143.51 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1643,7 +2092,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 55.88 0)
+			(at 143.51 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1652,7 +2101,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 143.51 55.88 0)
+			(at 143.51 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1661,78 +2110,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fff3c1b1-3b46-4afe-9067-067731009304")
+			(uuid "0e1d9ee6-ec03-402b-95f2-b99e6ab42c7f")
 		)
 		(instances
 			(project "STLink-Edge"
 				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 128.27 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e6497be1-a3fb-42cc-8ca4-3dfc2d14fde6")
-		(property "Reference" "#PWR05"
-			(at 128.27 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 128.27 49.2069 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 128.27 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "762f43c8-cb5a-4ba1-b50d-5a3bea96beb0")
-		)
-		(instances
-			(project "STLink-Edge"
-				(path "/7a42b07e-2549-4158-87dc-a392c9d51332"
-					(reference "#PWR05")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
