@@ -3004,6 +3004,12 @@
 		(uuid "cf74eb10-8ffb-469f-883b-81070131a872")
 	)
 	(junction
+		(at 238.76 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7854633-0752-4dde-a9ab-d54cd8cbeca4")
+	)
+	(junction
 		(at 256.54 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3779,7 +3785,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 66.04) (xy 241.3 66.04)
+			(xy 228.6 66.04) (xy 238.76 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3856,6 +3862,16 @@
 			(type default)
 		)
 		(uuid "c7a1a2ea-8357-46b3-afac-70400615937f")
+	)
+	(wire
+		(pts
+			(xy 238.76 66.04) (xy 241.3 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce44dc59-358c-4260-a82a-ad46adb90b24")
 	)
 	(wire
 		(pts
@@ -3956,6 +3972,16 @@
 			(type default)
 		)
 		(uuid "e229d86e-c6a8-4cfc-ac61-d3cf4ef97f66")
+	)
+	(wire
+		(pts
+			(xy 238.76 63.5) (xy 238.76 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7089bf9-dc8e-4da8-bf35-3c4758356373")
 	)
 	(wire
 		(pts
@@ -4387,6 +4413,72 @@
 			(justify right)
 		)
 		(uuid "ffc767b9-f850-4f80-ad83-b25bc1701bff")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 232.41 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "009d9668-681b-4f91-92fe-1b9e75c7e7c0")
+		(property "Reference" "#PWR014"
+			(at 232.41 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 232.41 25.0769 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 232.41 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b05ddc38-c313-4856-b95a-edbec5c45d0f")
+		)
+		(instances
+			(project "STM32-iButton"
+				(path "/4efb9682-f06b-455d-b5a5-d5184deb6e4d"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_Dual")
@@ -5169,16 +5261,16 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 232.41 29.21 0)
+		(at 255.27 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6f4ab813-bce4-49a2-9688-c48ab33a93cf")
-		(property "Reference" "#PWR04"
-			(at 232.41 33.02 0)
+		(uuid "569c2d54-bfd5-4765-a80a-ac26b394c9d1")
+		(property "Reference" "#PWR015"
+			(at 255.27 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5186,8 +5278,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 232.41 25.0769 0)
+		(property "Value" "+5V"
+			(at 255.27 25.0769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5195,7 +5287,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 232.41 29.21 0)
+			(at 255.27 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,7 +5296,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 29.21 0)
+			(at 255.27 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,7 +5305,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 232.41 29.21 0)
+			(at 255.27 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5222,12 +5314,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f0922949-6274-4024-8f4b-0566adc3bac9")
+			(uuid "2f869033-ab16-492d-859a-2c0fcf469016")
 		)
 		(instances
 			(project "STM32-iButton"
 				(path "/4efb9682-f06b-455d-b5a5-d5184deb6e4d"
-					(reference "#PWR04")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5304,6 +5396,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 238.76 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bc12e57-3012-4949-86e6-66658b4aef15")
+		(property "Reference" "#PWR013"
+			(at 238.76 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 238.76 59.3669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 238.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8834db39-42b7-488b-8fa4-6ac40a490b97")
+		)
+		(instances
+			(project "STM32-iButton"
+				(path "/4efb9682-f06b-455d-b5a5-d5184deb6e4d"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:AMS1117-3.3")
 		(at 219.71 66.04 0)
 		(mirror y)
@@ -5369,72 +5527,6 @@
 			(project "STM32-iButton"
 				(path "/4efb9682-f06b-455d-b5a5-d5184deb6e4d"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 255.27 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad99908f-68da-46ab-80f9-e421729c5372")
-		(property "Reference" "#PWR05"
-			(at 255.27 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 255.27 25.0769 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 255.27 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0c881db-084f-4cdf-b116-b82d83621d12")
-		)
-		(instances
-			(project "STM32-iButton"
-				(path "/4efb9682-f06b-455d-b5a5-d5184deb6e4d"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
