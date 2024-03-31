@@ -1,0 +1,3 @@
+C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW1/cmake-build-debug/CMakeFiles/iButton-FW1.elf.dir
+C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

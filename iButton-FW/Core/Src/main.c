@@ -82,7 +82,8 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-  uint8_t mousekey_report[5] = {0};
+  uint8_t buttonReport[5] = {0};
+  uint8_t lastButtonReport[5] = {0};
   extern USBD_HandleTypeDef hUsbDeviceFS;
   //extern uint8_t USBD_HID_SendReport(USBD_HandleTypeDef *pdev, uint8_t *report, uint16_t len);
   HAL_Delay(500);
@@ -99,31 +100,29 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    if (HAL_GPIO_ReadPin(B13_GPIO_Port, B13_Pin) == GPIO_PIN_RESET) {
+    if (HAL_GPIO_ReadPin(Btn1_GPIO_Port, Btn1_Pin) == GPIO_PIN_RESET) {
       mousekey_report[0] |= 1<<5;
     } else {
       mousekey_report[0] &= ~(1<<5);
     }
 
-    if (HAL_GPIO_ReadPin(B14_GPIO_Port, B14_Pin) == GPIO_PIN_RESET) {
+    if (HAL_GPIO_ReadPin(Btn2_GPIO_Port, Btn2_Pin) == GPIO_PIN_RESET) {
       mousekey_report[0] |= 1<<6;
     } else {
       mousekey_report[0] &= ~(1<<6);
     }
 
-    if (HAL_GPIO_ReadPin(B15_GPIO_Port, B15_Pin) == GPIO_PIN_RESET) {
+    if (HAL_GPIO_ReadPin(Btn3_GPIO_Port, Btn3_Pin) == GPIO_PIN_RESET) {
       mousekey_report[0] |= 1<<7;
     } else {
       mousekey_report[0] &= ~(1<<7);
     }
 
-    if (mousekey_report[0] > 0) {
-      HAL_GPIO_WritePin(OnboardLED_GPIO_Port, OnboardLED_Pin, 0);
-    } else {
-      HAL_GPIO_WritePin(OnboardLED_GPIO_Port, OnboardLED_Pin, 1);
+    if (buttonReport != lastButtonReport) {
+        lastButtonReport = buttonReport;
+        USBD_HID_SendReport(&hUsbDeviceFS, buttonReport, 5);
     }
 
-    USBD_HID_SendReport(&hUsbDeviceFS, mousekey_report, 5);
     HAL_Delay(50);
     /* USER CODE END WHILE */
 
@@ -142,16 +141,18 @@ void SystemClock_Config(void)
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
+  /** Configure the main internal regulator output voltage
+  */
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSI48;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL6;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -161,17 +162,17 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
-  PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL;
+  PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_HSI48;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -190,25 +191,14 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(OnboardLED_GPIO_Port, OnboardLED_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : OnboardLED_Pin */
-  GPIO_InitStruct.Pin = OnboardLED_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(OnboardLED_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : B13_Pin B14_Pin B15_Pin */
-  GPIO_InitStruct.Pin = B13_Pin|B14_Pin|B15_Pin;
+  /*Configure GPIO pins : Btn1_Pin Btn2_Pin Btn3_Pin */
+  GPIO_InitStruct.Pin = Btn1_Pin|Btn2_Pin|Btn3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

@@ -1,0 +1,19 @@
+E:\Program\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=E:/Program/JetBrains/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\wangyiwei\Documents\GitHub\iButton-USB-C\iButton-FW1 -B C:\Users\wangyiwei\Documents\GitHub\iButton-USB-C\iButton-FW1\cmake-build-debug
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/arm-none-eabi-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/arm-none-eabi-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/arm-none-eabi-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Minimal optimization, debug info included
+-- Configuring done (3.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW1/cmake-build-debug

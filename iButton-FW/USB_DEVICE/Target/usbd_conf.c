@@ -19,8 +19,8 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f1xx.h"
-#include "stm32f1xx_hal.h"
+#include "stm32l0xx.h"
+#include "stm32l0xx_hal.h"
 #include "usbd_def.h"
 #include "usbd_core.h"
 #include "usbd_hid.h"
@@ -55,11 +55,7 @@ static USBD_StatusTypeDef USBD_Get_USB_Status(HAL_StatusTypeDef hal_status);
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
-#if (USE_HAL_PCD_REGISTER_CALLBACKS == 1U)
-static void PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state);
-#else
-void HAL_PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state);
-#endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
+extern void SystemClock_Config(void);
 
 /*******************************************************************************
                        LL Driver Callbacks (PCD -> USB Device Library)
@@ -77,8 +73,8 @@ void HAL_PCD_MspInit(PCD_HandleTypeDef* pcdHandle)
     __HAL_RCC_USB_CLK_ENABLE();
 
     /* Peripheral interrupt init */
-    HAL_NVIC_SetPriority(USB_LP_CAN1_RX0_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(USB_LP_CAN1_RX0_IRQn);
+    HAL_NVIC_SetPriority(USB_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(USB_IRQn);
   /* USER CODE BEGIN USB_MspInit 1 */
 
   /* USER CODE END USB_MspInit 1 */
@@ -92,11 +88,11 @@ void HAL_PCD_MspDeInit(PCD_HandleTypeDef* pcdHandle)
   /* USER CODE BEGIN USB_MspDeInit 0 */
 
   /* USER CODE END USB_MspDeInit 0 */
-    /* Peripheral clock disable */
+    /* Disable Peripheral clock */
     __HAL_RCC_USB_CLK_DISABLE();
 
     /* Peripheral interrupt Deinit*/
-    HAL_NVIC_DisableIRQ(USB_LP_CAN1_RX0_IRQn);
+    HAL_NVIC_DisableIRQ(USB_IRQn);
 
   /* USER CODE BEGIN USB_MspDeInit 1 */
 
@@ -305,6 +301,7 @@ USBD_StatusTypeDef USBD_LL_Init(USBD_HandleTypeDef *pdev)
   hpcd_USB_FS.Instance = USB;
   hpcd_USB_FS.Init.dev_endpoints = 8;
   hpcd_USB_FS.Init.speed = PCD_SPEED_FULL;
+  hpcd_USB_FS.Init.phy_itface = PCD_PHY_EMBEDDED;
   hpcd_USB_FS.Init.low_power_enable = DISABLE;
   hpcd_USB_FS.Init.lpm_enable = DISABLE;
   hpcd_USB_FS.Init.battery_charging_enable = DISABLE;
@@ -601,31 +598,17 @@ void USBD_static_free(void *p)
 
 }
 
+/* USER CODE BEGIN 5 */
 /**
-  * @brief Software Device Connection
-  * @param hpcd: PCD handle
-  * @param state: Connection state (0: disconnected / 1: connected)
+  * @brief  Configures system clock after wake-up from USB resume callBack:
+  *         enable HSI, PLL and select PLL as system clock source.
   * @retval None
   */
-#if (USE_HAL_PCD_REGISTER_CALLBACKS == 1U)
-static void PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state)
-#else
-void HAL_PCDEx_SetConnectionState(PCD_HandleTypeDef *hpcd, uint8_t state)
-#endif /* USE_HAL_PCD_REGISTER_CALLBACKS */
+static void SystemClockConfig_Resume(void)
 {
-  /* USER CODE BEGIN 6 */
-  if (state == 1)
-  {
-    /* Configure Low connection state. */
-
-  }
-  else
-  {
-    /* Configure High connection state. */
-
-  }
-  /* USER CODE END 6 */
+  SystemClock_Config();
 }
+/* USER CODE END 5 */
 
 /**
   * @brief  Returns the USB status depending on the HAL status:
