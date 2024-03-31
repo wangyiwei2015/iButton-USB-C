@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/wangyiwei/CLionProjects/STM32_USB_Test/cmake-build-debug"
+			"value" : "c:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -223,7 +223,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Program/JetBrains/CLion Nova/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "E:/Program/JetBrains/CLion/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -235,7 +235,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Program/JetBrains/CLion Nova/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "E:/Program/JetBrains/CLion/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -247,7 +247,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Program/JetBrains/CLion Nova/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "E:/Program/JetBrains/CLion/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -487,7 +487,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Program/JetBrains/CLion Nova/bin/mingw/bin/dlltool.exe"
+			"value" : "E:/Program/JetBrains/CLion/bin/mingw/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test"
+			"value" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -715,11 +715,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "make program"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "E:/Program/JetBrains/CLion Nova/bin/ninja/win/x64/ninja.exe"
+			"type" : "UNINITIALIZED",
+			"value" : "E:/Program/JetBrains/CLion/bin/ninja/win/x64/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -919,7 +919,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Program/JetBrains/CLion Nova/bin/cmake/win/x64/share/cmake-3.28"
+			"value" : "E:/Program/JetBrains/CLion/bin/cmake/win/x64/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/cmake-build-debug"
+			"value" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug"
 		},
 		{
 			"name" : "STM32_USB_Test_IS_TOP_LEVEL",
@@ -1195,7 +1195,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test"
+			"value" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW"
 		}
 	],
 	"kind" : "cache",

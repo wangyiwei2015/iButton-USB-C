@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/wangyiwei/CLionProjects/STM32_USB_Test
+# Install script for directory: C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

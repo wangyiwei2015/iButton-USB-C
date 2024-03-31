@@ -151,39 +151,39 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/USB_DEVICE/App"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/USB_DEVICE/Target"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Core/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/CMSIS/Include"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/CMSIS/Include"
 				}
 			],
 			"language" : "C",
@@ -298,39 +298,39 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/USB_DEVICE/App"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/USB_DEVICE/Target"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Core/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/Drivers/CMSIS/Include"
+					"path" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/Drivers/CMSIS/Include"
 				}
 			],
 			"language" : "ASM",
@@ -355,7 +355,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/cmake-build-debug/STM32_USB_Test.map",
+				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/cmake-build-debug/STM32_USB_Test.map",
 				"role" : "flags"
 			},
 			{
@@ -380,7 +380,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "C:/Users/wangyiwei/CLionProjects/STM32_USB_Test/STM32F103C8TX_FLASH.ld",
+				"fragment" : "C:/Users/wangyiwei/Documents/GitHub/iButton-USB-C/iButton-FW/STM32F103C8TX_FLASH.ld",
 				"role" : "flags"
 			}
 		],

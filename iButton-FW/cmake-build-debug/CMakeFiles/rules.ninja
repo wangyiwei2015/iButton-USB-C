@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "E:\Program\JetBrains\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\wangyiwei\CLionProjects\STM32_USB_Test -BC:\Users\wangyiwei\CLionProjects\STM32_USB_Test\cmake-build-debug
+  command = E:\Program\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\wangyiwei\Documents\GitHub\iButton-USB-C\iButton-FW -BC:\Users\wangyiwei\Documents\GitHub\iButton-USB-C\iButton-FW\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
@@ -61,7 +61,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "E:\Program\JetBrains\CLion Nova\bin\ninja\win\x64\ninja.exe" $FILE_ARG -t clean $TARGETS
+  command = E:\Program\JetBrains\CLion\bin\ninja\win\x64\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -69,6 +69,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "E:\Program\JetBrains\CLion Nova\bin\ninja\win\x64\ninja.exe" -t targets
+  command = E:\Program\JetBrains\CLion\bin\ninja\win\x64\ninja.exe -t targets
   description = All primary targets available:
 
