@@ -5307,7 +5307,7 @@
 			(justify right)
 		)
 	)
-	(gr_text "iButton v2.1\n2024.03\nby Leo"
+	(gr_text "iButton v2.2\n2024.04\nby Leo"
 		(at 62.5 40 0)
 		(layer "F.SilkS")
 		(uuid "74979cd9-669a-484b-91ae-b7158297380d")
