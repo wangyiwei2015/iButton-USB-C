@@ -1091,8 +1091,8 @@
 		(layer "Margin")
 		(uuid "ef835fb3-9e51-45dd-9f3d-e5e7a48947f1")
 	)
-	(gr_text "STLink-V2\nEdgeDebugger\n2024.03\nv2.1 by Leo"
-		(at 63 57 0)
+	(gr_text "EdgeLink v2.1\nfor STLink-V2\n2024.04 by Leo"
+		(at 63 56.5 0)
 		(layer "B.SilkS")
 		(uuid "ace85d2b-964d-486f-a166-8d05b27cd537")
 		(effects
