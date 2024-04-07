@@ -1,0 +1,10 @@
+"Id";"指示符";"封装";"数量";"名称";"供应商和参考";
+1;"U1";"LQFP-48_7x7mm_P0.5mm";1;"STM32L052C8Tx";;;
+2;"C3,C5,C4";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";3;"4.7uF";;;
+3;"R1";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";1;"1.5k";;;
+4;"J2,J1";"SWD5-Gold";2;"Conn_SWD";;;
+5;"U2";"SOT-89-3_Handsoldering";1;"AMS1117-3.3";;;
+6;"C2,C1";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";2;"10uF";;;
+7;"SW2,SW1,SW3";"SW_SPST_SKQG_WithoutStem";3;"Button_user";;;
+8;"P1";"USB_C_Male";1;"USB_C_2.0";;;
+9;"R2";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";1;"10k";;;

@@ -268,7 +268,7 @@
       "idf": "",
       "netlist": "",
       "plot": "Fab/",
-      "pos_files": "",
+      "pos_files": "Fab/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
