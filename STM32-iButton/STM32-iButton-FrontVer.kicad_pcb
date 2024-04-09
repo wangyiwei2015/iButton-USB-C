@@ -171,7 +171,7 @@
 		(descr "LQFP, 48 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2358-16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "LQFP QFP")
 		(property "Reference" "U1"
-			(at 0 -5.85 270)
+			(at 0 -5.85 -90)
 			(layer "F.Fab")
 			(uuid "c662ef9b-b05d-49b3-99ca-396671b56aca")
 			(effects
@@ -182,7 +182,7 @@
 			)
 		)
 		(property "Value" "STM32L052C8Tx"
-			(at 0 5.85 270)
+			(at 0 5.85 -90)
 			(layer "F.Fab")
 			(uuid "7a73deb9-13c7-4ae3-b6f7-4f02d7b7ee08")
 			(effects
@@ -616,7 +616,7 @@
 			(uuid "6d311fce-2fb3-409e-bef4-ce8df3560c67")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "3a4ac339-8684-491d-b09b-a3090569c79d")
 			(effects
