@@ -1809,7 +1809,7 @@ LOAD C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb
 .iplt           0x080043ac        0x0
  .iplt          0x080043ac        0x0 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x080043ac       0xc4
+.rodata         0x080043ac       0xb0
                 0x080043ac                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
@@ -1825,63 +1825,63 @@ LOAD C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb
  .rodata.USBD_StdDevReq
                 0x08004400       0x28 CMakeFiles/iButton-FW1.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
  .rodata.USBD_FS_ProductStrDescriptor.str1.4
-                0x08004428       0x46 CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                                 0x16 (size before relaxing)
+                0x08004428       0x32 CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                                  0xd (size before relaxing)
  .rodata.USBD_FS_ManufacturerStrDescriptor.str1.4
-                0x0800446e       0x13 CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x0800445a        0x8 CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
  .rodata.USBD_FS_ConfigStrDescriptor.str1.4
-                0x0800446e        0xb CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x0800445a        0xb CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
  .rodata.USBD_FS_InterfaceStrDescriptor.str1.4
-                0x0800446e        0xe CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08004484                        . = ALIGN (0x4)
- *fill*         0x0800446e        0x2 
+                0x0800445a        0xe CMakeFiles/iButton-FW1.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08004468                        . = ALIGN (0x4)
+ *fill*         0x0800445a        0x2 
 
-.ARM.extab      0x08004470        0x0
-                0x08004470                        . = ALIGN (0x4)
+.ARM.extab      0x0800445c        0x0
+                0x0800445c                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08004470                        . = ALIGN (0x4)
+                0x0800445c                        . = ALIGN (0x4)
 
-.ARM            0x08004470        0x8
-                0x08004470                        . = ALIGN (0x4)
-                0x08004470                        __exidx_start = .
+.ARM            0x0800445c        0x8
+                0x0800445c                        . = ALIGN (0x4)
+                0x0800445c                        __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x08004470        0x8 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x08004478                        __exidx_end = .
-                0x08004478                        . = ALIGN (0x4)
+                0x0800445c        0x8 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x08004464                        __exidx_end = .
+                0x08004464                        . = ALIGN (0x4)
 
-.preinit_array  0x08004478        0x0
-                0x08004478                        . = ALIGN (0x4)
-                0x08004478                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004464        0x0
+                0x08004464                        . = ALIGN (0x4)
+                0x08004464                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08004478                        PROVIDE (__preinit_array_end = .)
-                0x08004478                        . = ALIGN (0x4)
+                0x08004464                        PROVIDE (__preinit_array_end = .)
+                0x08004464                        . = ALIGN (0x4)
 
-.init_array     0x08004478        0x8
-                0x08004478                        . = ALIGN (0x4)
-                0x08004478                        PROVIDE (__init_array_start = .)
+.init_array     0x08004464        0x8
+                0x08004464                        . = ALIGN (0x4)
+                0x08004464                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08004478        0x4 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x08004464        0x4 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp\libg.a(libc_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0800447c        0x4 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x08004480                        PROVIDE (__init_array_end = .)
-                0x08004480                        . = ALIGN (0x4)
+ .init_array    0x08004468        0x4 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0800446c                        PROVIDE (__init_array_end = .)
+                0x0800446c                        . = ALIGN (0x4)
 
-.fini_array     0x08004480        0x4
-                0x08004480                        . = ALIGN (0x4)
-                0x08004480                        PROVIDE (__fini_array_start = .)
+.fini_array     0x0800446c        0x4
+                0x0800446c                        . = ALIGN (0x4)
+                0x0800446c                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08004480        0x4 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x08004484                        PROVIDE (__fini_array_end = .)
-                0x08004484                        . = ALIGN (0x4)
-                0x08004484                        _sidata = LOADADDR (.data)
+ .fini_array    0x0800446c        0x4 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x08004470                        PROVIDE (__fini_array_end = .)
+                0x08004470                        . = ALIGN (0x4)
+                0x08004470                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08004484        0x0
- .rel.iplt      0x08004484        0x0 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x08004470        0x0
+ .rel.iplt      0x08004470        0x0 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.data           0x20000000      0x164 load address 0x08004484
+.data           0x20000000      0x164 load address 0x08004470
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -1939,17 +1939,17 @@ LOAD C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb
                 0x20000164                        _edata = .
 
 .tm_clone_table
-                0x20000164        0x0 load address 0x080045e8
+                0x20000164        0x0 load address 0x080045d4
  .tm_clone_table
                 0x20000164        0x0 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000164        0x0 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000164        0x0 load address 0x080045e8
+.igot.plt       0x20000164        0x0 load address 0x080045d4
  .igot.plt      0x20000164        0x0 C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
                 0x20000164                        . = ALIGN (0x4)
 
-.bss            0x20000164      0x988 load address 0x080045e8
+.bss            0x20000164      0x988 load address 0x080045d4
                 0x20000164                        _sbss = .
                 0x20000164                        __bss_start__ = _sbss
  *(.bss)
@@ -1987,7 +1987,7 @@ LOAD C:/PROGRA~2/ARMGNU~1/13C7F1~1.2RE/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb
                 0x20000aec                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000aec      0x604 load address 0x080045e8
+                0x20000aec      0x604 load address 0x080045d4
                 0x20000af0                        . = ALIGN (0x8)
  *fill*         0x20000aec        0x4 
                 [!provide]                        PROVIDE (end = .)
