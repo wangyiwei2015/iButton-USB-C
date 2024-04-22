@@ -1,5 +1,5 @@
 # iButton (USB-C)
- [English](blob/main/README_EN.md)
+ [English](README_EN.md)
 
 为配备 USB Type-C 接口的 iOS 设备提供外置的物理按键，可自定义功能。
 
