@@ -1,7 +1,11 @@
 # iButton (USB-C)
-External buttons for iOS devices, built on STM32 and USB HID middleware.
+ [English](blob/main/README_EN.md)
 
-The buttons can be configured in Accessibility to control the iOS device. It acts as an external mouse with user configurable keys.
+为配备 USB Type-C 接口的 iOS 设备提供外置的物理按键，可自定义功能。
+
+由 STM32 上的 USB HID middleware 实现，模拟了外置鼠标上的自定义按键。
+
+按键功能在`辅助功能` - `触控` - `辅助触控` 中设置。
 
 
 
@@ -9,25 +13,27 @@ The buttons can be configured in Accessibility to control the iOS device. It act
 
 
 
-## Build Environment
+## 构建环境
 
-- Firmware Manager: **STM32CubeMX**
-- Code Editor / IDE: **CLion**
-- Compiler: **gcc-arm-none-eabi**
-- Imager: **ST-Link Utility** or **STM32CubeProgrammer** or **OpenOCD**
+- 主控固件管理和代码生成: **STM32CubeMX**
+- 代码编辑器/开发工具: **CLion**
+- 编译器: **gcc-arm-none-eabi**
+- 烧录工具: **ST-Link Utility** or **STM32CubeProgrammer** or **OpenOCD**
 
-To download some necessary packages in STM32CubeMX, you will need an ST account.
+注意：使用 STM32CubeMX 时，可能会要求登录 ST account 。
 
 
 
-## Project Structure
+## 项目文件
 
-- iButton-FW: Main firmware code (CLion/CubeIDE)
-- STM32-iButton: Main circuit board (KiCAD)
-- EdgeLink: ST-Link V2 to EdgeLink Adaptor (KiCAD)
-- EdgDbg: ST-Link with EdgeLink connector (LCEDA Pro)
-- Case3D: 3D case (Shapr3D)
-- Datasheet: references (PDF)
+- iButton-FW: 主要固件代码 (CLion/CubeIDE)
+- STM32-iButton: 主板 (KiCAD)
+- EdgeLink: ST-Link V2 to EdgeLink 转接器 (KiCAD)
+- EdgDbg: ST-Link 带有 EdgeLink 连接器 (立创EDA Pro)
+- Case3D: 3D 外壳模型 (Shapr3D)
+- Datasheet: 参考资料 (PDF)
+
+其中 EdgDbg（Edge-Debugger）的基底是 [开源 ST-Link-V2](https://oshwhub.com/CYIIOT/ST_LINK-V2_1)，将 SWD 相关接口改成 EdgeLink 而成。
 
 
 
