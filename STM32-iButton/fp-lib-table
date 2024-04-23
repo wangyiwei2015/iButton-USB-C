@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "wyw-conn")(type "KiCad")(uri "${KIPRJMOD}/wyw-conn.pretty")(options "")(descr ""))
-)
