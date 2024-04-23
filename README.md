@@ -26,12 +26,12 @@
 
 ## 项目文件
 
-- iButton-FW: 主要固件代码 (CLion/CubeIDE)
-- STM32-iButton: 主板 (KiCAD)
-- EdgeLink: ST-Link V2 to EdgeLink 转接器 (KiCAD)
-- EdgDbg: ST-Link 带有 EdgeLink 连接器 (立创EDA Pro)
-- Case3D: 3D 外壳模型 (Shapr3D)
-- Datasheet: 参考资料 (PDF)
+- [iButton-FW](iButton-FW1/): 主要固件代码 (CLion/CubeIDE)
+- [STM32-iButton](STM32-iButton-v3/): 主板 (KiCAD)
+- [EdgeLink](EdgeLink2/): ST-Link V2 to EdgeLink 转接器 (KiCAD)
+- [EdgDbg](EdgDbg3/): ST-Link 带有 EdgeLink 连接器 (立创EDA Pro)
+- [Case3D](Case3D/): 3D 外壳模型 (Shapr3D)
+- [Datasheet](Datasheet/): 参考资料 (PDF)
 
 其中 EdgDbg（Edge-Debugger）的基底是 [开源 ST-Link-V2](https://oshwhub.com/CYIIOT/ST_LINK-V2_1)，将 SWD 相关接口改成 EdgeLink 而成。
 
