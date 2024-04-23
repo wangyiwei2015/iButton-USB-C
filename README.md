@@ -27,7 +27,7 @@
 ## 项目文件
 
 - [iButton-FW](iButton-FW1/): 主要固件代码 (CLion/CubeIDE)
-- [STM32-iButton](STM32-iButton-v3/): 主板 (KiCAD)
+- [STM32-iButton](STM32-iButton-v3/): 主板 (立创EDA Pro)
 - [EdgeLink](EdgeLink2/): ST-Link V2 to EdgeLink 转接器 (KiCAD)
 - [EdgDbg](EdgDbg3/): ST-Link 带有 EdgeLink 连接器 (立创EDA Pro)
 - [Case3D](Case3D/): 3D 外壳模型 (Shapr3D)
