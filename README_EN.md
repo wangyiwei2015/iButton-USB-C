@@ -5,7 +5,7 @@ The buttons can be configured in Accessibility to control the iOS device. It act
 
 
 
-![Design Preview](https://github.com/wangyiwei2015/iButton-USB-C/blob/main/assets/3d_preview.png)
+![Design Preview](assets/preview.jpg)
 
 
 
@@ -28,5 +28,4 @@ To download some necessary packages in STM32CubeMX, you will need an ST account.
 - EdgDbg: ST-Link with EdgeLink connector (LCEDA Pro)
 - Case3D: 3D case (Shapr3D)
 - Datasheet: references (PDF)
-
 

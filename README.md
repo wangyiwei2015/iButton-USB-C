@@ -9,7 +9,7 @@
 
 
 
-![Design Preview](https://github.com/wangyiwei2015/iButton-USB-C/blob/main/assets/3d_preview.png)
+![Design Preview](assets/preview.jpg)
 
 
 
